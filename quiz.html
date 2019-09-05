@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body onload="load()">
+
+    <div class="loading"></div>
+
+    <div class="start">
+        <h1 id="mega">Mega Quiz</h1>
+        <button id="start">START</button>
+        <a id="homepage" href="../Untitled-1.html">Homepage</a>
+    </div>
+
+
+    <div class="grid">
+
+        <div id="quiz">
+            <h1>Quiz</h1>
+            <hr style="margin-bottom: 50px">
+            
+            <p id="question"></p>
+            
+            <div class="buttons">
+                <button id="A" onclick="checkAns('A')"><span id="choice"></span></button>
+                <button id="B" onclick="checkAns('B')"><span id="choice"></span></button>
+                <button id="C" onclick="checkAns('C')"><span id="choice"></span></button>
+                <button id="D" onclick="checkAns('D')"><span id="choice"></span></button>
+            </div>
+            
+            <hr style="margin-top: 50px">
+
+            <grid id="footer">
+                <p id="progress">Question <span id="x"></span> of <span id="y"></span></p>
+                <!-- <button id="next">Next</button> -->
+            </grid>
+
+            <div id="time">
+                <!-- <h2 style="font-size: 50px">TIME</h2> -->
+                <div id="counter">0</div>
+                <div id="btimeGauge">
+                    <div id="timeGauge"></div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="result">
+        <h1>YOU SCORE <br> <span id="score">0</span> of <span id="outOf">0</span> </h1>
+        <button class="buttons" id="E">VIEW ANSWER</button>
+        <button class="restart" id="E">RESTART</button> 
+        <a id="homepage" href="../Untitled-1.html">Homepage</a>
+    </div>
+
+    <div id="viewAns">
+        <p>1: New Delhi</p>
+        <p>2: Mumbai</p>
+        <p>3: Hyderabad</p>
+        <p>4: 29</p>
+    </div>
+
+    
+    <script src="app.js"></script>
+    <script src="question.js"></script>
+    <script src="quiz_controller.js"></script>
+
+
+</body>
+</html>
